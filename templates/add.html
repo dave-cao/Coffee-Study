@@ -17,7 +17,7 @@
       <h1>Add a new cafe into the database</h1>
 
       <!-- This is where your WTForm will go -->
-      {{ wtf.quick_form(form, novalidate=True) }}
+      {{ wtf.quick_form(form, novalidate=True, button_map={'submit':'primary'}) }}
 
       <p class="space-above"><a href="{{ url_for('cafes') }}">See all cafes</a></p>
 
@@ -25,4 +25,5 @@
   </div>
 </div>
 
+<footer style='text-align: center;'>&copy; 2023 Cow Inc.</footer
 {% endblock %}
