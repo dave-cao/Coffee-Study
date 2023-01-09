@@ -60,6 +60,40 @@ def add():
     return render_template("add.html", form=form)
 
 
+@app.route("/edit<int:cafe_id>", methods=["GET", "POST"])
+def edit(cafe_id):
+    cafe = Cafe.query.get(cafe_id)
+    form = CafeForm(
+        cafe_name=cafe.name,
+        map_url=cafe.map_url,
+        img_url=cafe.img_url,
+        location=cafe.location,
+        seats=cafe.seats,
+        coffee_price=cafe.coffee_price,
+        has_toilet=cafe.has_toilet,
+        has_wifi=cafe.has_wifi,
+        has_sockets=cafe.has_sockets,
+        can_take_calls=cafe.can_take_calls,
+    )
+    if form.validate_on_submit():
+        coffee_price = "$" + "%.2f" % form.coffee_price.data
+        cafe.name = form.cafe_name.data
+        cafe.map_url = form.map_url.data
+        cafe.img_url = form.img_url.data
+        cafe.location = form.location.data
+        cafe.seats = form.seats.data
+        cafe.has_toilet = form.has_toilet.data
+        cafe.has_wifi = form.has_wifi.data
+        cafe.has_sockets = form.has_sockets.data
+        cafe.can_take_calls = form.can_take_calls.data
+        cafe.coffee_price = coffee_price
+        db.session.commit()
+
+        return redirect(url_for("cafes"))
+
+    return render_template("add.html", form=form)
+
+
 @app.route("/delete<int:cafe_id>")
 def delete(cafe_id):
     cafe_to_delete = Cafe.query.get(cafe_id)

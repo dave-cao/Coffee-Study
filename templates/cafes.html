@@ -46,6 +46,7 @@
                 <td> {{ cafe.has_toilet }}</td>
                 <td> {{ cafe.has_sockets }}</td>
                 <td> {{ cafe.can_take_calls }}</td>
+                <td><a href="{{ url_for('edit', cafe_id=cafe.id )}}" class="btn btn-info">Edit</a></td>
                 <td><a href="{{ url_for('delete', cafe_id=cafe.id )}}" class="btn btn-danger">Delete</a></td>
               </tr>
 
