@@ -7,7 +7,7 @@
 ![USAGE GIF OR PIC TO CAPTURE ATTENTION](./assets/coffee.gif)
 
 - [Live](https://youtu.be/ru9LM5-GEH4) demonstration video.
-- [Demo](replit example) the Project.
+- [Demo](https://study-and-coffee.onrender.com) the Project.
 
 
 <!-- ABOUT THE PROJECT -->
@@ -25,7 +25,7 @@ One day I needed a cafe shop to work at...but there were so many. Give me a cent
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Once you clicked this [link](LINK TO WEBSITE) and entered the database
+1. Once you clicked this [link](https://study-and-coffee.onrender.com) and entered the database
 2. You can either scroll all the way down and press `Add a Cafe`, or `Edit` and `Delete` any other Cafe entry to your liking.
 3. Pretty simple, nothing else to be said.
 
