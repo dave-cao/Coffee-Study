@@ -1,6 +1,6 @@
 <h1 align='center'>💻 Study and Coffee ☕️</h1>
 
-<h4 align='center'>Want to work in a cafe but need power and wifi</h4>
+<h4 align='center'>Want to work in a cafe but need power and wifi? Look no further, this is my Cafe collection database!</h4>
 
 <br>
 
