@@ -69,7 +69,7 @@ def edit(cafe_id):
         img_url=cafe.img_url,
         location=cafe.location,
         seats=cafe.seats,
-        coffee_price=cafe.coffee_price,
+        coffee_price=cafe.coffee_price[1:],
         has_toilet=cafe.has_toilet,
         has_wifi=cafe.has_wifi,
         has_sockets=cafe.has_sockets,
